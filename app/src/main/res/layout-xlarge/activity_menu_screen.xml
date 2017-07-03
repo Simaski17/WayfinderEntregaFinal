@@ -1,0 +1,2362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondofinal">
+
+    <RelativeLayout
+        android:layout_width="336dp"
+        android:layout_height="match_parent">
+
+        <!--INICIO PANEL BOTONES IZQUIERDOS-->
+        <!--INICIO PANEL BOTONES IZQUIERDOS-->
+
+        <LinearLayout
+            android:id="@+id/ll_Botones_menu_izquierdo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.05"
+            android:background="@color/fondo"
+            android:orientation="vertical"
+            android:weightSum="9">
+
+            <LinearLayout
+                android:id="@+id/ll_LogoApumanque_menu_screen"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.3"
+                android:orientation="vertical">
+
+                <!--<include layout="@layout/header_route" />-->
+
+                <ImageView
+                    android:id="@+id/iv_logoApumanque_menu_screen"
+                    android:layout_width="126dp"
+                    android:layout_height="165dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="49dp"
+                    android:background="@drawable/logoapumanque" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_home_opcion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.97">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_linea_roja_home"
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_icono_home"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@+id/iv_linea_roja_home"
+                        android:background="@drawable/icon_home"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_texto_home"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="28dp"
+                        android:layout_toRightOf="@+id/iv_icono_home"
+                        android:text="Inicio"
+                        android:textColor="@color/blanco"
+                        android:textSize="28sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_flecha_roja_home"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="280dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mapa_opcion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.97">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_wlr">
+
+                    <ImageView
+                        android:id="@+id/iv_linea_roja_mapa"
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_icono_mapa"
+                        android:layout_width="27dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@+id/iv_linea_roja_mapa"
+                        android:background="@drawable/mapa"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_texto_mapa"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="28dp"
+                        android:layout_toRightOf="@+id/iv_icono_mapa"
+                        android:text="@string/mapa"
+                        android:textColor="@color/blanco"
+                        android:textSize="28sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_flecha_roja_mapa"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="280dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tiendas_opcion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.97">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_wlr">
+
+                    <ImageView
+                        android:id="@+id/iv_linea_roja_tiendas"
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_icono_tiendas"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="27dp"
+                        android:layout_toRightOf="@+id/iv_linea_roja_tiendas"
+                        android:background="@drawable/tiendas"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_texto_tiendas"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:layout_toRightOf="@+id/iv_icono_tiendas"
+                        android:text="@string/tiendas"
+                        android:textColor="@color/blanco"
+                        android:textSize="28sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_flecha_roja_tiendas"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="280dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_comida_opcion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.97">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_linea_roja_comida"
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_icono_comida"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="27dp"
+                        android:layout_toRightOf="@+id/iv_linea_roja_comida"
+                        android:background="@drawable/comida"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_texto_comida"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:layout_toRightOf="@+id/iv_icono_comida"
+                        android:text="@string/comida"
+                        android:textColor="@color/blanco"
+                        android:textSize="28sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_flecha_roja_comida"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="280dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_descuentos_opcion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.97">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_wlr">
+
+                    <ImageView
+                        android:id="@+id/iv_linea_roja_descuentos"
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_icono_descuentos"
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="32dp"
+                        android:layout_toRightOf="@+id/iv_linea_roja_descuentos"
+                        android:background="@drawable/descuentos"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_texto_descuentos"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:layout_toRightOf="@+id/iv_icono_descuentos"
+                        android:text="@string/descuentos"
+                        android:textColor="@color/blanco"
+                        android:textSize="28sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_flecha_roja_descuentos"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="280dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_participa_opcion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.97">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_linea_roja_participa"
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_icono_participa"
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="27dp"
+                        android:layout_toRightOf="@+id/iv_linea_roja_participa"
+                        android:background="@drawable/participayganahome"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_texto_participa"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:layout_toRightOf="@+id/iv_icono_participa"
+                        android:text="Participa y Gana"
+                        android:textColor="@color/blanco"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_flecha_roja_participa"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="280dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.85">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--FIN PANEL BOTONES IZQUIERDOS-->
+        <!--FIN PANEL BOTONES IZQUIERDOS-->
+        <!--FIN PANEL BOTONES IZQUIERDOS-->
+
+    </RelativeLayout>
+
+
+    <!--INICIO AREA MAPA-->
+    <!--INICIO AREA MAPA-->
+    <!--INICIO AREA MAPA-->
+    <LinearLayout
+
+        android:id="@+id/ll_mapa"
+        android:layout_width="1285dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="336dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/activity_mapa" />
+
+            <ImageView
+                android:id="@+id/iv_regresar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/regresar_mapa" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="47dp"
+                android:text="Regresar"
+                android:textColor="@color/blanco"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--FIN AREA MAPA-->
+    <!--FIN AREA MAPA-->
+    <!--FIN AREA MAPA-->
+
+
+    <!--INICIO AREA SERVICIOS-->
+    <!--INICIO AREA SERVICIOS-->
+    <!--INICIO AREA SERVICIOS-->
+    <LinearLayout
+        android:id="@+id/ll_servicios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/ll_mapa"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="14">
+
+        <LinearLayout
+            android:id="@+id/ll_PisoTres"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.05"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_PisoTresa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btva">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_PisoTres"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btv2"
+                android:visibility="gone">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_PisoDos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.05"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_PisoDosa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btna">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_PisoDos"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn2"
+                android:visibility="gone">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_PisoUno"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.05"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_PisoUnoa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btaa">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_PisoUno"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bta2"
+                android:visibility="gone">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Servicios"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="right">
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_wbtr">
+
+                <TextView
+
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="38dp"
+                    android:gravity="center"
+                    android:text="SERVICIOS"
+                    android:textColor="@color/blanco"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llInformacionAndBanos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.93"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_wr"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_flechaRojas1"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tvInformacionAndBanos"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="9dp"
+                        android:text="@string/informacion"
+                        android:textColor="@color/grisOpciones"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/iv_s1"
+                        android:layout_width="32dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/informaciongris" />
+
+                    <ImageView
+                        android:id="@+id/iv_s1a"
+                        android:layout_width="32dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/informacionblanco"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_lineaRojas1"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBanosDamaAndAscensor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.93"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_wr"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_flechaRojas2"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tvBanosDamaAndAscensor"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="9dp"
+                        android:text="@string/banos_damas"
+                        android:textColor="@color/grisOpciones"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/iv_s2"
+                        android:layout_width="20dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/banosdamagris" />
+
+                    <ImageView
+                        android:id="@+id/iv_s2a"
+                        android:layout_width="20dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/banosdamablanco"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_lineaRojas2"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBanosCaballerosAndEstacionamiento"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.93"
+            android:gravity="right">
+
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_wr"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_flechaRojas3"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tvBanosCaballerosAndEstacionamiento"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="9dp"
+                        android:text="@string/banos_caballeros"
+                        android:textColor="@color/grisOpciones"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/iv_s3"
+                        android:layout_width="18dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/banoshombresgris" />
+
+                    <ImageView
+                        android:id="@+id/iv_s3a"
+                        android:layout_width="18dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/banoshombresblanco"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_lineaRojas3"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llCajerosAndDescuentos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.93"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_wr"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_flechaRojas4"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tvCajerosAndDescuentos"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="9dp"
+                        android:text="@string/cajeros"
+                        android:textColor="@color/grisOpciones"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/iv_s4"
+                        android:layout_width="18dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="23dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/cajerosgris" />
+
+                    <ImageView
+                        android:id="@+id/iv_s4a"
+                        android:layout_width="18dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="23dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/cajerosblanco"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_lineaRojas4"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llAscensor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.93"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_wr"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_flechaRojas5"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tvAscensor"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="9dp"
+                        android:text="@string/ascensor"
+                        android:textColor="@color/grisOpciones"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/iv_s5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/ascensorgris" />
+
+                    <ImageView
+                        android:id="@+id/iv_s5a"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/ascensorblanco"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_lineaRojas5"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llCochesSillas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.93"
+            android:gravity="right">
+
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_wr"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_flechaRojas6"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tvCochesSillas"
+
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="9dp"
+                        android:text="@string/coches_sillas"
+                        android:textColor="@color/grisOpciones"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/iv_s6"
+                        android:layout_width="28dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/cochesgris" />
+
+                    <ImageView
+                        android:id="@+id/iv_s6a"
+                        android:layout_width="28dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/cochesblanco"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_lineaRojas6"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llGuardaPeques"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.93"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_wr"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_flechaRojas7"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tvGuardaPeques"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="9dp"
+                        android:text="@string/guardapeques"
+                        android:textColor="@color/grisOpciones"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/iv_s7"
+                        android:layout_width="28dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/guardapequesgris" />
+
+                    <ImageView
+                        android:id="@+id/iv_s7a"
+                        android:layout_width="28dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/guardapequesblanco"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_lineaRojas7"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llDescuentosPromociones"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.93"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_wr"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_flechaRojas8"
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/flecha_red_derecha"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tvDescuentosPromociones"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="9dp"
+                        android:text="@string/descuentos"
+                        android:textColor="@color/grisOpciones"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/iv_s8"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/descuentosgris" />
+
+                    <ImageView
+                        android:id="@+id/iv_s8a"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/descuentosblanco"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_lineaRojas8"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/linea_red"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEspacio"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.91"
+            android:gravity="right">
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_wbr">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--FIN AREA SERVICIOS-->
+    <!--FIN AREA SERVICIOS-->
+    <!--FIN AREA SERVICIOS-->
+
+    <!--INICIO LINEA GRIS-->
+    <!--INICIO LINEA GRIS-->
+    <!--INICIO LINEA GRIS-->
+    <RelativeLayout
+
+        android:id="@+id/rl_lineaGris"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="243dp"
+        android:background="@drawable/border_wbtr"
+        android:visibility="gone">
+
+    </RelativeLayout>
+    <!--FIN LINEA GRIS-->
+    <!--FIN LINEA GRIS-->
+    <!--FIN LINEA GRIS-->
+
+
+    <!--INICIO LAYOUT TIENDA-->
+    <!--INICIO LAYOUT TIENDA-->
+    <!--INICIO LAYOUT TIENDA-->
+    <LinearLayout
+        android:id="@+id/ll_tienda"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="336dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_tienda_botones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fondoRecycler">
+
+            <LinearLayout
+                android:id="@+id/ll_tienda_botones"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp"
+                    android:background="@color/negro"
+                    android:gravity="right">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_edittext_tienda"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="336dp"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_edittext_tienda"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="39dp"
+                            android:background="@drawable/lupa_buscar" />
+
+                        <EditText
+                            android:id="@+id/et_edittext_tienda"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="57dp"
+                            android:layout_marginTop="-9dp"
+                            android:hint="Buscar"
+                            android:imeActionLabel="Ok"
+                            android:imeOptions="actionDone"
+                            android:inputType="textShortMessage"
+                            android:maxLines="1"
+                            android:textColor="@color/blanco"
+                            android:textCursorDrawable="@drawable/edittext_cursor"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_boton_azul_tienda"
+                        android:layout_width="308dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/azulBoton"
+                        android:gravity="center"
+                        android:visibility="visible">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="27dp"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/que_buscas"
+                            android:textColor="@color/blanco"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="39dp"
+                            android:background="@drawable/lupa_buscar" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_boton_naranja_tienda"
+                        android:layout_width="308dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/naranjaBoton"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="3dp"
+                            android:text="Cancelar"
+                            android:textColor="@color/blanco"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/cancelaricono" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="82dp"
+                    android:background="@color/negro">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/rl_botones_tienda"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:id="@+id/ll_az_tienda"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_wl"
+                                android:gravity="center">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="A/Z"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_rubros_tienda"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_wr"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RUBROS"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_piso_tienda"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border_wr"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="PISO"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_botones_pisos_tienda"
+                    android:layout_width="match_parent"
+                    android:layout_height="111dp"
+                    android:background="@color/negro"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/ll_botones_pisos_tienda_opciones"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:id="@+id/ll_piso_uno_opciones"
+                                android:layout_width="170dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="110dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/ovalo_relleno_azul"
+                                android:gravity="center_vertical">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="45dp"
+                                    android:text="Piso 1"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="30sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_piso_dos_opciones"
+                                android:layout_width="170dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/ovalo_relleno_naranja"
+                                android:gravity="center_vertical">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="45dp"
+                                    android:text="Piso 2"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="30sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_piso_tres_opciones"
+                                android:layout_width="170dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/ovalo_relleno_verde"
+                                android:gravity="center_vertical">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="45dp"
+                                    android:text="Piso 3"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="30sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_botones_tienda"
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:background="@color/negro"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/ll_botones_tienda_opciones"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:id="@+id/ll_tienda_opciones"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.35"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_tienda_opciones"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="110dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/tiendas"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="30sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_numero_tienda"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_numero_tiendas"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="33dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/numero"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="30sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_piso_pasillo_tienda"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.65"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_piso_pasillo_tienda"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/piso_pasillo"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="30sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_piso_piso_tienda"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_piso_piso_tienda"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/piso"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="30sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_botones_tienda2"
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/ll_botones_tienda_opciones2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/negro"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:id="@+id/ll_tienda_opciones2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_tienda_opciones2"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="110dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/tiendas"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="30sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_numero_tienda2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="33dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/numero"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="30sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_piso_pasillo_tienda2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="70dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/piso_pasillo"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="30sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ll_botones_tienda">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_tienda"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.wayfinder.rinno.wayfinderentregafinal.fastscroller.RecyclerViewFastScroller
+                        android:id="@+id/fast_scroller_tienda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="20dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--FIN LAYOUT TIENDAS-->
+    <!--FIN LAYOUT TIENDAS-->
+    <!--FIN LAYOUT TIENDAS-->
+
+
+    <!--INICIO LAYOUT COMIDA-->
+    <!--INICIO LAYOUT COMIDA-->
+    <!--INICIO LAYOUT COMIDA-->
+    <LinearLayout
+        android:id="@+id/ll_comida"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="336dp"
+        android:background="@color/fondoRecycler"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_comida_botones"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.96"
+                android:background="@color/negro"
+                android:gravity="right">
+
+                <RelativeLayout
+                    android:id="@+id/rl_edittext_comida"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="336dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_edittext_comida"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="39dp"
+                        android:background="@drawable/lupa_buscar" />
+
+                    <EditText
+                        android:id="@+id/et_edittext_comida"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="-9dp"
+                        android:imeActionLabel="Ok"
+                        android:imeOptions="actionDone"
+                        android:inputType="textShortMessage"
+                        android:maxLines="1"
+                        android:textColor="@color/blanco"
+                        android:textCursorDrawable="@drawable/edittext_cursor"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_boton_azul_comida"
+                    android:layout_width="308dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/azulBoton"
+                    android:gravity="center">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/que_buscas"
+                        android:textColor="@color/blanco"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="39dp"
+                        android:background="@drawable/lupa_buscar" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_boton_naranja_comida"
+                    android:layout_width="308dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/naranjaBoton"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="3dp"
+                        android:text="Cancelar"
+                        android:textColor="@color/blanco"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/cancelaricono" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.86"
+                android:background="@color/negro">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/rl_botones_comida"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:id="@+id/ll_restaurantes"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border_wl"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_texto_restaurantes"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RESTAURANTES"
+                                android:textAllCaps="true"
+                                android:textColor="@color/blanco"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_cafeterias"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border_wr"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_texto_cafeterias"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cafeteriasOp"
+                                android:textAllCaps="true"
+                                android:textColor="@color/blanco"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_confiterias"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border_wr"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_texto_confiterias"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/confiteriaOp"
+                                android:textAllCaps="true"
+                                android:textColor="@color/blanco"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_heladerias"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border_wr"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_texto_heladerias"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/heladeriaOp"
+                                android:textAllCaps="true"
+                                android:textColor="@color/blanco"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.18"
+                android:background="@color/negro">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_botones_comida_opciones"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:id="@+id/ll_comida_opciones"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.35"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tv_comida_opciones"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="110dp"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/tiendas"
+                                android:textColor="@color/blanco"
+                                android:textSize="30sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_numero_comida"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_numero_opciones"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="33dp"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/numero"
+                                android:textColor="@color/blanco"
+                                android:textSize="30sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_piso_pasillo_comida"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.65"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_piso_pasillo_comida"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/piso_pasillo"
+                                android:textColor="@color/blanco"
+                                android:textSize="30sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_piso_piso_comida"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_piso_piso_comida"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/piso"
+                                android:textColor="@color/blanco"
+                                android:textSize="30sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_comida_botones">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_comida"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--FIN LAYOUT COMIDA-->
+    <!--FIN LAYOUT COMIDA-->
+    <!--FIN LAYOUT COMIDA-->
+
+
+    <!--INICIO LAYOUT DESCUENTOS-->
+    <!--INICIO LAYOUT DESCUENTOS-->
+    <!--INICIO LAYOUT DESCUENTOS-->
+    <LinearLayout
+        android:id="@+id/ll_descuentos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="336dp"
+        android:background="@color/fondoRecycler"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_botones_descuentos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:weightSum="0.8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:background="@color/negro"
+                    android:gravity="right">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_boton_azul_descuento"
+                        android:layout_width="308dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/azulBoton"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="27dp"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/que_buscas"
+                            android:textColor="@color/blanco"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="39dp"
+                            android:background="@drawable/lupa_buscar" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_boton_naranja_descuento"
+                        android:layout_width="308dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/naranjaBoton"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="3dp"
+                            android:text="Cancelar"
+                            android:textColor="@color/blanco"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/cancelaricono" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.69"
+                    android:background="@color/negro">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_wl">
+
+                        <HorizontalScrollView
+                            android:id="@+id/hsvDescuentos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/rl_botones_descuentos"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/negro"
+                                android:orientation="horizontal">
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+
+                        <RelativeLayout
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/sombra">
+
+                            <RelativeLayout
+                                android:id="@+id/rlFlechaIzquierdaDescuentos"
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="31dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="35dp"
+                                    android:rotation="180"
+                                    android:src="@drawable/arrow_left_red" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/sombra_derecha">
+
+                            <RelativeLayout
+                                android:id="@+id/rlFlechaDerechaDescuentos"
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="31dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="35dp"
+                                    android:src="@drawable/arrow_left_red" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.53"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/iv_descargar_app"
+                            android:layout_width="1145dp"
+                            android:layout_height="92dp"
+                            android:layout_marginLeft="180dp"
+                            android:layout_marginTop="70dp"
+                            android:background="@drawable/descargapp_v2" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_botones_descuentos">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_descuentos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scrollbars="vertical" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--FIN LAYOUT DESCUENTOS-->
+    <!--FIN LAYOUT DESCUENTOS-->
+    <!--FIN LAYOUT DESCUENTOS-->
+
+
+    <!--INICIO LAYOUT PARTICIPA-->
+    <!--INICIO LAYOUT PARTICIPA-->
+    <!--INICIO LAYOUT PARTICIPA-->
+    <LinearLayout
+        android:id="@+id/ll_participa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="334dp"
+        android:background="@color/fondo"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_participa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            fresco:placeholderImage="@drawable/logoapumanque" />
+
+    </LinearLayout>
+    <!--FIN LAYOUT PARTICIPA-->
+    <!--FIN LAYOUT PARTICIPA-->
+    <!--FIN LAYOUT PARTICIPA-->
+
+
+</RelativeLayout>
+

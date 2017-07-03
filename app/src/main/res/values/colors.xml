@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="negro">#000000</color>
+    <color name="fondo">#141519</color>
+    <color name="borderLinear">#a2a2a2</color>
+    <color name="rojoOpciones">#eb4d3d</color>
+    <color name="fondoRecycler">#23262f</color>
+    <color name="recyclerOpciones">#2b2c30</color>
+    <color name="recyclerOpcionesFragment">#2d303c</color>
+    <color name="fondoTransparente">#70000000</color>
+    <color name="azulBoton">#4A90E2</color>
+    <color name="naranjaBoton">#F5A623</color>
+    <color name="bordeOpciones">#464B59</color>
+    <color name="grisOpciones">#7B7C82</color>
+    <color name="grisTextoActivityMapa">#4a4a4a</color>
+    <color name="rojopunto">#eb4d3d</color>
+    <color name="rojoefecto">#733534</color>
+    <color name="tiendapisouno">#9AC6F8</color>
+    <color name="tiendapisodos">#FFDFA9</color>
+    <color name="tiendapisotres">#c3e683</color>
+    <color name="colorabecedario">#FF1E2026</color>
+
+    <color name="alphabet_text_color">#ffffff</color>
+    <color name="alphabet_text_selected_color">#eb4d3d</color>
+    <color name="alphabet_background_color">#FF1E2026</color>
+    <color name="alphabet_background_border_color">#FF1E2026</color>
+    <color name="alphabet_background_selected_color">#9E9E9E</color>
+
+</resources>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">WayFinder</string>
+
+    <!--Strings pantalla inicio-->
+    <string name="ver_mapa">Ver Mapa</string>
+    <string name="tiendas">Locales</string>
+    <string name="comida">Comida</string>
+    <string name="descuentosDos">Descuentos</string>
+    <string name="promociones">Promociones</string>
+    <string name="que_buscas">\u00bfQu\u00e9 buscas\u003f</string>
+
+    <string name="mapa">Mapa</string>
+    <string name="home">Inicio</string>
+
+    <string name="informacion">Informaciones</string>
+    <string name="banos_damas">Ba\u00F1os Mujeres</string>
+    <string name="banos_caballeros">Ba\u00F1os Hombres</string>
+    <string name="banos">Ba\u00F1os</string>
+    <string name="cajeros">Cajeros</string>
+    <string name="ascensor">Ascensor</string>
+    <string name="coches_sillas">\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Coches y Sillas de Ruedas</string>
+    <string name="guardapeques">Guardapeques</string>
+    <string name="descuentos">Descuentos</string>
+    <string name="estacionamiento">\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Ticket\n Estacionamiento</string>
+
+
+    <string name="numero">N\u00famero</string>
+    <string name="piso_pasillo">Pasillo-Avenida</string>
+    <string name="piso">Piso</string>
+    <string name="accesorios_bijouteria">Accesorios y Bijouteria</string>
+    <string name="restorant">Restaurante</string>
+    <string name="cafeteriasOp">CAFETER\u00cdAS</string>
+    <string name="cafeterias">Cafeter\u00edas</string>
+    <string name="confiteriaOp">CONFITER\u00cdA</string>
+    <string name="confiteria">Chocolater\u00eda y Confiter\u00eda</string>
+    <string name="heladeriaOp">HELADER\u00cdA</string>
+    <string name="heladeria">Helader\u00eda</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="banos_de_damas_ubicados_en_pisos_1_y_3">Ba\u00f1os de Damas Ubicados en Pisos 1 y 3</string>
+    <string name="banos_de_hombres_ubicados_en_pisos_1_y_3">Ba\u00f1os de Hombres Ubicados en Pisos 2 y 3</string>
+    <string name="guardapeques_ubicados_en_pisos_1">Guardapeques Ubicado en Piso 1</string>
+    <string name="coches_sillas_ubicados_en_pisos_1">Coches y Sillas de Ruedas Ubicados en Piso 1</string>
+    <string name="informaciones_ubicados_en_pisos_1_y_2">Informaciones Ubicados en Pisos 1 y 2</string>
+    <string name="cajeros_ubicados_en_pisos_1_y_2">Cajeros Ubicados en Pisos 1 y 2</string>
+
+    <string name="estas_aqui">EST\u00c1S AQU\u00cd</string>
+
+</resources>
